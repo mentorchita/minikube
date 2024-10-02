@@ -7,5 +7,7 @@ spec:
     - ReadWriteOnce
   capacity:
     storage: 5Gi
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: manual
   hostPath:
     path: /data/pv0001/
